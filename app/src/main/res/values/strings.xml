@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BMI Calc</string>
+    <string name="height">Height</string>
+    <string name="bmi">BMI</string>
+    <string name="weight">Weight</string>
+    <string name="inches">Inches</string>
+    <string name="health">health</string>
+    <string name="heightState">HeightStat</string>
+    <string name="weightStat">Weight</string>
+</resources>

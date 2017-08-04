@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/water"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.branden.bmicalc.MainActivity">
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="143dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Lbs"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvWeight" />
+
+    <EditText
+        android:id="@+id/etHeightFeet"
+        android:layout_width="154dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Feet"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etHeightInches"
+        android:layout_width="143dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="@string/inches"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:layout_marginLeft="143dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="95dp"
+        android:onClick="Calculate"
+        android:background="@color/colorPrimary"
+        android:text="Calculate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight"
+        android:layout_marginRight="144dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:text="@string/bmi"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalc"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <Button
+        android:id="@+id/btuStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ShowStats"
+        android:text="Stats"
+        android:layout_marginTop="49dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvResults"
+        android:layout_marginRight="136dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
